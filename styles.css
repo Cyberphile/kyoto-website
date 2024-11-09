@@ -679,18 +679,30 @@ footer {
 }
 /* Responsive text adjustments for landmark and cuisine pages */
 @media (max-width: 768px) {
-    .content-section, .text-content {  /* Replace with the actual classes if different */
-        padding: 10px; /* Reduce padding for mobile */
+    /* General content adjustments for mobile */
+    .content-section, .text-content {
+        padding: 5px; /* Reduce padding for mobile */
         font-size: 16px; /* Scale down font for readability */
         line-height: 1.5;
         text-align: center; /* Center-align for better readability */
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
     }
 
+    /* Adjust heading sizes */
     .content-section h2, .text-content h2 {
         font-size: 22px;
     }
 
+    /* Paragraph adjustments */
     .content-section p, .text-content p {
         font-size: 16px;
+    }
+
+    /* Image adjustments */
+    .content-section img {
+        width: 100%; /* Full-width images on mobile */
+        margin: 10px 0; /* Space around images */
     }
 }
